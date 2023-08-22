@@ -1,0 +1,1149 @@
+/* to target any thing in html
+.class name{   } it to select or target the element who have class by this name  (recommended)
+#id name{   } it to select or target the element who have id by this name (not recommended)
+or we write the the tags name like (p or video.image)
+p {   }
+*/
+.spicel {
+  color: #000;
+}
+
+/*  
+1-deffernt is html done line by line so the defernt is in execute
+<link> is external style >>html<< (recommended)
+<style> is internal style>>html<< (not recommended)
+attributs (style) is to do inline style >>html<< the most power one whice are execute first (not recommended)
+#example>>>>  <P style="color: #000;">Winter is here</P> 
+*/
+
+/* 
+Name Conventions And Rules >> important to improve ur style in code pro
+https://elzero.org/css-formatting-guide/ 
+*/
+
+.spicel {
+  background-color: red;
+  /*color name  */
+  background-color: rgb(0 0 0/ 50%);
+  /* red blue green Alpha channel*/
+  background-color: #ff0000;
+  /*color hex code*/
+  background-image: url(../1081933.jpg);
+  /*to add pic as background*/
+  background-repeat: repeat;
+  /*to make the pic repeated in x and y*/
+
+  background-attachment: scroll;
+  /* (background-attachment) is to make the backgroun fixed or moveing when u scroll 
+  type of it is (fixed-scroll)  */
+
+  background-position: center;
+  /* (position) is to customize the place of background by px or % or position 
+  like center left right top bottom ther are 9 position */
+
+  background-size: contain;
+  /* >>size<< is to customize the size of background there are two type of it (content , cover, or by px or by %)
+  (contain) it to make the pic of background visioul without cut or zoom
+  (cover)    it to make the pic of background cover all the site 
+  it do the cut or zoom or stretched if this necessary */
+
+  padding: 10px 10px 10px 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  /* (padding) is the inside edge of the  element u can customize it by(px or %) 
+  >>>>>(its run ass clockwise >>>top>>> right>>> bottom>>> left) */
+
+  margin: 10px 10px 10px 10px;
+  margin-top: auto;
+  margin-right: 10px;
+  margin-bottom: 10%;
+  margin-left: 10px;
+  /* (margin) is the outside edge of the  element u can customize it by(px or %) its accept negative(-)
+  >>>>>(its run ass clockwise >>>top>>> right>>> bottom>>> left) */
+
+  border: 10px solid royalblue;
+  /*border of the element*/
+  border-width: 10px 10px 10px 10px;
+  /*(its run ass clockwise >>>top>>> right>>> bottom>>> left)*/
+  border-color: rebeccapurple rosybrown royalblue yellowgreen;
+  /*(its run ass clockwise >>>top>>> right>>> bottom>>> left)*/
+  border-style: solid dashed dotted double;
+  /*(its run ass clockwise >>>top>>> right>>> bottom>>> left)*/
+
+  outline: 10px red solid;
+  /*its out of element nt run as clockwise*/
+
+
+  /*
+  block 
+  -
+  -take full width if no width
+  -add line break
+  -respect padding, margin
+  >>>examble-div
+  
+  line
+  -
+  -do not respect width or hight
+  -do not add line break
+  -respect padding, margin(just right + left)
+  -elements are adding before and after it
+  >>>examble-span
+
+  inline-block
+  -
+  -respect padding, margin, width, hight
+  -elements are adding before and after it
+  >>>examble-span which display:inline-block*/
+
+  display: inline-block;
+  display: inline;
+  display: block;
+  /* (display) can change a >>inline<< to >>block<< and the opposite and can make both >>>inline-block<<< */
+
+
+  display: none;
+  /* (display:none) make the element disaper with every thing about like the pleace it was hold in  */
+
+  visibility: hidden;
+  /* (visibility: hidden) make the element disaper but save the place it was hold in empty */
+
+}
+
+/* (the grouping) is use when there are multiple attribute frequent in many style */
+.one,
+.two,
+.three,
+.four {
+  color: #eee;
+  background-color: rebeccapurple;
+}
+
+/* (nesting) is to editing thing by calling the tags that it inside and calling his name after it  
+example>>>>>>>>>>>>>(very important case)*/
+div p {
+  color: #000;
+}
+
+div .spicel {
+  color: #000;
+}
+
+.spicel-two {
+  min-width: 20px;
+  /*to minmum width*/
+  max-width: 30px;
+  /*to maxmum width*/
+  max-height: 30px;
+  /*to maxmum heigh*/
+  min-height: 20px;
+  /*to minmum heigh*/
+  width: fit-content;
+  /*to make the width same size of the element without useing (display) inline-block*/
+
+  /* overflow is to control the over element u enter  */
+  overflow: hidden;
+  /*to hide it*/
+  overflow: scroll;
+  /*to make scrol to see it*/
+  overflow: auto;
+  /*to make the scrol aper auto when its needed*/
+  overflow-y: hidden;
+  /*customize the over flow in x and y*/
+  overflow-x: hidden;
+
+  /* (text-properties)
+(align) is to control the text position (center or left or right) */
+  text-align: center;
+
+  /* (vertical-align) it to control the text vertical(top-middel-bottom */
+  vertical-align: middle;
+
+  /* (direction) is to control the text direction is it ltr like english or rtl like arabic */
+  direction: rtl ltr;
+
+  /* (deccoration) is to control underline or remove line from link for ex or make it overline ...etc */
+  text-decoration: underline overline none;
+
+  /* (transform) is to manage styl of words for ex>> make words start with capital or make it all low or cap */
+  text-transform: uppercase lowercase capitalize;
+
+  /* (letter-spacing) to countrol the space between the letters */
+  letter-spacing: normal 15px;
+
+
+  /* (word-spacing) to control the space between the words */
+  word-spacing: normal;
+
+  /* (text-indent) to add space after the words */
+  text-indent: 100px;
+
+  /* (line-height) to control the space between the lines of words or pargraphs */
+  line-height: normal 15px;
+
+  /* (white-space) to control the break in the paragraphs or make it without breaks */
+  white-space: nowrap normal;
+
+  /* (word-break) if the link or words of paragraph overflow u can break it or no break it */
+  word-break: break-all break-word;
+
+  /* (text-overflow) it hide the over text out of the shape 
+attribute  (ellipsis) is to put ... to make the usr know that ther are more text hidden*/
+  text-overflow: ellipsis;
+  /* this way to make hidden words by over flow aper when u mark (...)
+.spicel-two:hover {
+  overflow: visible;
+} */
+
+
+  /* attribute  (inherits) is to make the element copy the parents properties>>>>>>>>>>important<<<<<<<<<<< */
+  /* inherits can be do automatically by puting thr properties in the parents 
+then all the div or class under the parents will take this properties */
+
+  /* (fount-family)we use it to change the font style (we get fonts from .googel .com to get fonts for ur web)and add it by insert his link in ur code  */
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* (font-weight)to make the font bold  */
+  font-weight: bold;
+
+  /*-------------------------------------------------------------*/
+  /*CSS units
+  --px        =>pixel
+  --em        =>time 
+  --rem       =>root time
+  --percentage=>.%
+  --vw        =>ViewPort Width
+
+  read
+  >>>vmin
+  >>>vh
+
+
+  1em isnot =16px 
+
+  default fount size for web big is 16px
+  */
+
+
+
+  /* Mouse Cursor */
+  cursor: pointer move grab;
+  /* cursor is to control how the mouse deling with the element is it pointer like button or grap or move .etc */
+
+
+  /* float is use to arrange the elements next to each other */
+  float: left right;
+
+  /* (clear: both; ) is use to make the element witch is be as clear as a break bettwen the elements */
+  clear: both;
+
+
+  /* attributes>>( calc )<<is to calculet the width or height in the web page and do all mathmatic opertion on it */
+  width: calc((100%-60px)/5);
+  width: calc(95%/5);
+
+  /* (opacity) is use to control the opacity of the the all content of element  */
+  opacity: .5;
+
+
+  /*  Element(position) is to customion  position of the element (for the web page -or- for the parents element)           */
+  position: absolute fixed relative static sticky;
+  /*attributs >> (static) default position no moved cant be moved using (top-right-left-bottom) */
+  /*attributs >> (relative) we use this attributs to move this element based on the position where he is like(puting pxs where top of him)*/
+  /*attributs >> (absolute)1- the element get out of the workflow
+  >>>>>>>>>>>>>>>>>>>>>>>>>2- the element moves based on (web page or parents element) */
+  /*attributs >> (fixed ) make the element stay where u put him while ur scrolling*/
+  /*attributs >> (sticky) make the element when u scrolling stick when he reach the position u enter*/
+
+
+  /*  Element(z-index) is to arrange the elements layers who be first and who be under all layers
+      notice that (z-index) cant be work without (position)element                                 */
+  z-index: 73;
+
+
+  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>(Tabel)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  /*  Element(list-style) to customizion the (ul or ol) list or reset it*/
+  list-style: none top;
+
+
+  /* border-spacing is to customizion the border size in the tabel */
+  border-spacing: 0px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>( Pseudo Classes)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* (:hover) is when u pointer the element will change to the action u choice like color change */
+input:hover {
+  color: #ff0000;
+}
+
+/* (:checked) mean that when u checked the checked box he do the followimg action */
+.ch:checked {
+  display: none;
+}
+
+/* (:checked + label) mean that when u checked the checked box he do the following action in the label */
+.ch:checked+label {
+  display: none;
+}
+
+/* (:visited) mean when u click on the link the colorchange to mark that u visited this website */
+a:visited {
+  color: #000;
+}
+
+/* (:focus) mean that when u focus in it like typing the colorchang or do the action u insert */
+.input:focus {
+  border-color: aqua;
+  outline: none;
+}
+
+/* (:empty) mean that when any element empty do the following action in it */
+:empty {
+  color: #000;
+}
+
+/* (:empty) mean that when the element(div) empty do the following action in it */
+div:empty {
+  color: #000;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>( Pseudo element)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* (::first-letter) mean that the firest letter in the paragraf or in all site do the folloing in */
+p::first-letter,
+::first-letter {
+  color: aqua;
+  display: block;
+  background-color: #000;
+}
+
+/* (::first-line) mean that the firest line in the paragragh or in all site do the folloing in */
+p::first-line,
+::first-line {
+  color: aqua;
+  display: block;
+  background-color: #000;
+}
+
+/* (::selection) that to customzion the element selection  */
+
+p::selection,
+::selection {
+  background-color: #000;
+  color: red
+}
+
+/*>>>>>>>>>>>>(content)useing<<<<<<<<<<<<*/
+/* (::before) to add element before the class 
+but to do this u shoud add attruputs(content) until if it empty  */
+/* (content) is a element u add  with all changeing and custmizion in the before  and after */
+div::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+
+}
+
+/*>>>>>>>>>>>>(content)useing<<<<<<<<<<<<*/
+/* (::after) to add element before the class 
+but to do this u shoud add attruputs(content) until if it empty  */
+div::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+}
+
+/*>>>>>>>>>>>>(content)useing<<<<<<<<<<<<*/
+/*>>>counter<<< is to add count to ur elements or class by add attriput (counter-increment ) in parent element
+like the folloing and adding name for it */
+.parent {
+  counter-increment: the-counter;
+}
+
+/*(counter(name)) then add where the counter be and how will be all the  customize thing by add counter and name of it*/
+div::after {
+  content: counter(the-counter);
+}
+
+/*>>>>>>>>>>>>(content)useing<<<<<<<<<<<<*/
+/*>>>(attr(name of attributs in the html))<<< it to add attributes and customize it and mange it*/
+
+div::before {
+  content: attr(attributes-name);
+  display: none;
+}
+
+/* this state mean when u pointer the div ::before display will be block  u can do like thos or add more thinges*/
+div:hover::before {
+  display: block;
+}
+
+/*>>>>>>>>>>>>(content)useing<<<<<<<<<<<<*/
+/* >>>>(string)<<<< when u add("")  that mean u will add string or u can let it empty and customize it*/
+div::after {
+  content: "winter";
+  /* attribut >>>>>(transparent)<<<< it make the element invisible */
+  border-color: transparent transparent yellow transparent;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+div {
+  /*(border-radius)>> is a attribut to control and customize the edges of element or make it circle
+  by make the radius 50% of the height and width*/
+  border-radius: 10px 10px 10px 10px;
+
+  /* (box-shadow) is to ,ake shadow for the element  
+u can insert the folloing >> H-shadow | V-shadow | Blur | spreed | color | inset <<*/
+
+  box-shadow: 0 0 10px 0 #000;
+
+  /* (box-sizing:) is to make the >border< , >padding< and >margin< (all with the width and height) or (them + width and height)
+  attribut (content-box) is the deffult =(them + width and height)
+  attribut (border-box) is the deffult =(all with the width and height >>same height and width) */
+  box-sizing: content-box border-box;
+
+}
+
+
+/*----------------------(transition)-------------------------*/
+.one {
+  width: 100px;
+  height: 150px;
+  /*(transition-duration)it is time the element take to do the hover or animation from the began to end
+    1s==1000ms */
+  transition-duration: 1000ms 1s;
+
+  /*(transition-delay)it is the time the element w8 to start the animetion or the hover */
+  transition-delay: 1000ms 1s;
+
+
+  /*(transition-property)its the scope to to choice which Property will transition is it width or heghit or all */
+  transition-property: all width;
+
+  /*(transition-timing-function) its the style of animation how start how end which fast which slower */
+  transition-timing-function: ease ease-in ease-in-out ease-out linear;
+
+  /*(transition) another way to write all the Previous property duration transition-timing-function: ease transition-delay: 0.5s;*/
+  transition: all 2s 0.5s linear;
+}
+
+.one:hover {
+  width: 200px;
+  height: 400px;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+div {
+  /*(!important) this attriputs using to overwrite on any style after or befor it until if it was style in html 
+ (to editing others work) to do it easer -_shift + 1_- */
+  background-color: #000 !important;
+  /*-------------------------*/
+
+  /*
+  margin collapse: is ignor the margin in some conditions 
+  the (margin collapse) rules
+  [1]only vertical margin collapse
+  [2]biger margin win 
+  [3] margin collapse done when no element between them
+  [4] nesting desnot prevent collapseing
+  */
+
+
+
+}
+
+/*----------------------------------------variables---------------------------------------------*/
+/* :root is the way to make globl element whice is u editing in html tag */
+:root {
+  /*
+Css Variables 
+--global variables
+--local  variables
+var(variables name-fallback value)
+*/
+
+  /* this is the way to make variables by do the folloing (--nameOfVariables) */
+  --maincolor: blue;
+  --mainpadding: red;
+}
+
+.main {
+  /* the way of calling Variables and add fallback value */
+  background-color: var(--maincolor, red);
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+.spicel {
+  /*
+  attriputs (transparent) is to make the color transparent >>that u cant see it
+  */
+  color: transparent;
+}
+
+/*----------------------------------------------(Flex)-------------------------------------------------*/
+.flex {
+  /* to start the flex u must make display flex */
+  display: flex;
+  /*its to make the other elements come next to flex like in lines*/
+  display: inline-flex;
+  /*
+  >>flex-direction:<< is for the specilise direction of elements like flot, 
+  but the different is the flex is following the direction of the wep page are it (rtl or ltr)
+  (row)            == is the defult value of flex and follow the direction of wep page
+  (row-reverse)    == is the reverse of row
+  (coumn)          == is to arrainge it from up to down 
+  (column-reverse) == make the arrainge upsidedown
+  >>>to work u must make the (display:flex;)<<<<
+  */
+  flex-direction: row row-reverse column column-reverse;
+
+  /*
+  >>flex-wrap:<< its for if u add more element are the be in the same line put reduse size of them
+  or make them in new line.
+  (nowrap) == the defult value and make the new element be next to other
+  (wrap)   == make the new element in new line
+  >>>to work u must make the (display:flex;)<<<<
+  */
+  flex-wrap: wrap nowrap wrap-reverse;
+
+  /* >>flex-flow:<< the shor cut of flex (flex-direction + flex-wrap) 
+  >>>to work u must make the (display:flex;)<<<<*/
+  flex-flow: row nowrap;
+
+  /* >>justify-content:<<(flex-start,end,center)is to management element position 
+  from where start to add element are from start or end or center (horizontal) 
+  >>>to work u must make the (display:flex;)<<<<
+  (justify-content: flex-start) make the element added or be the start-horizontal
+  (justify-content: flex-end)   make the element added or be in the end-horizontal
+  (justify-content: center)     make the element added or be in center-horizontal
+  */
+  justify-content: flex-start flex-end center;
+
+  /*
+  (space-between, around , evently) is to manage the space between elements
+  (space-between) is to make the space between the element 
+  (space-around)  is to make the space right and left the element
+  (space-evenly)  is to make the space right and left the element but all are equal 
+  >>>to work u must make the (display:flex;)<<<<
+  */
+  justify-content: space-around space-between space-evenly;
+
+  /*
+>>align-items:stretch<< is for control and management the element position , hightand 
+and the new element arrange all this in (vertical) >>>to work u must make the (display:flex;)<<<<
+
+(stretch) the defult value  and it make the elements size all change together in case u dont give one of them size
+(flex-start) place the elements in the start put (vertical)
+(flex-end)   place the elements in the end put   (vertical)
+(center)     place the elements in the center put(vertical)
+*/
+  align-items: stretch flex-end flex-start center;
+
+  /*
+>>align-content:stretch<< is for control and management all element in content  position , hightand 
+and the new element arrange all this in (vertical) >>>to work u must make the (display:flex;)<<<<
+(stretch) the defult value  and it make the elements size all change together in case u dont give one of them size
+(flex-start) place the all elements in the start put (vertical)
+(flex-end)   place the all elements in the end put   (vertical)
+(center)     place the all elements in the center put(vertical)
+  (space-between) is to make the space between the element (vertical)
+  (space-around)  is to make the space right and left the element(vertical)
+  (space-evenly)  is to make the space right and left the element but all are equal (vertical)
+*/
+  align-content: stretch flex-start flex-end center space-between space-around space-evenly;
+
+  /*
+>>flex-grow: 0;<< its for control how size or else will grow up when u add more size for many elements
+which one will grow more ! if the size is avalbel !
+the defult value is -0-
+>>>to work u must make the (display:flex;)<<<<
+*/
+  flex-grow: 0;
+  /*
+  >>flex-grow: 0;<< its for control how size or else will decrease when u  lower size for many elements
+  which one will be lower more ! if the size is avalbel !
+  the defult value is -1-
+  >>>to work u must make the (display:flex;)<<<<
+  */
+  flex-shrink: 1;
+
+  /*
+>>order:0<< is to arrange the elements 123456 etc .!!nots!!when u put element in place of element 
+the element go after the element which take his place so if there are no elementafter him u 
+must make sure u order every element after the element u wanna make firest 
+
+the defult value is 0
+>>>to work u must make the (display:flex;)<<<<
+*/
+  order: 0;
+
+  /*
+>>flex-basis: auto;<< its to control and mange the size of elements but 
+dependent on flex-direction are it coulm or row etc
+>>>to work u must make the (display:flex;)<<<<
+*/
+  flex-basis: auto 100px 10%;
+
+  /*>>flex<< its a shortcut u can enter flex-grow flex-shrink flex-basis*/
+  flex: 0 1 200px;
+
+  /* 
+>>align-self:auto;<< its to countrol  or manage one element child out of perents to make for him different 
+orders like flex-start flex-end center etc
+*/
+  align-self: auto flex-start flex-end center;
+}
+
+/*----------------------------------------------(filter)-------------------------------------------------*/
+
+/*
+>>filter: ;<< is too add filter too imge 
+*/
+.filter {
+  filter: grayscale(100%);
+  /* make pic black and white*/
+
+  filter: Blur(10%);
+  /* make blur*/
+  filter: invert(100%);
+  /*invert the colore */
+
+}
+
+.filter:hover {
+
+  filter: grayscale(0%);
+  filter: Blur(0%);
+  filter: invert(0%);
+}
+
+
+/*-----------------------------------------(Gradients)-------------------------------------------------*/
+/*
+>>linear-gradient()<< (direction-ex(to right)|| angel-ex(60deg) ,color start ,color stop, ...etc)
+*/
+.Gradients {
+  background-image: linear-gradient(to right, #eee 20%, #27ea27 20%, #27ea27 70%, #2980b9 70%);
+}
+
+/*------------------------------------(Pointer Events And Caret Color)------------------------------------*/
+
+.caret-point_events {
+  /*
+  >>caret-color: ;<< its to change the color of mouset text pointer 
+  >>pointer-events: none;<< its to cancel the event that the element do when u mark it 
+  */
+  caret-color: #2980b9;
+  pointer-events: none;
+}
+
+/*------------------------------------------------(Grid)--------------------------------------------------*/
+/*
+--Grid == is a way to to divide the page web to parts and customize every part size
+--parent
+---display: grid | inline-grid;
+--->>grid-template-columns:<<=>[number of columns in and hight of element] =>[px, %, auto, fraction, repeat(), mix] 
+>>>>>grid-template-rows:<<<<<=>[number of rows in and width of element] =>[px, %, auto, fraction, repeat(), mix] 
+>>>row-gap:;<<< its to add space between rows
+  >>>column-gap: ;<<<its to add space between column
+  >>>gap: ;<<< its to add space between rows and column (short cut)
+*/
+
+.Grid {
+  display: grid inline-grid;
+  grid-template-columns: minmax(100px, 300px) 100px 25% auto 1fr repeat(2, 1fr) repeat(auto-fill, minmix(200px, 1fr));
+  grid-template-rows: 100px 25% auto 1fr repeat(2, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  gap: 10px 10px;
+
+  /* >>justify-content:<<(flex-start,end,center)is to management element position 
+  from where start to add element are from start or end or center (horizontal) 
+  >>>to work u must make the (display:flex;)<<<<
+  (justify-content: flex-start) make the element added or be the start-horizontal
+  (justify-content: flex-end)   make the element added or be in the end-horizontal
+  (justify-content: center)     make the element added or be in center-horizontal
+
+  >>justify-content:<<(flex-start,end,center)is to management element position 
+  from where start to add element are from start or end or center (horizontal) 
+  >>>to work u must make the (display:flex;)<<<<
+  (justify-content: flex-start) make the element added or be the start-horizontal
+  (justify-content: flex-end)   make the element added or be in the end-horizontal
+  (justify-content: center)     make the element added or be in center-horizontal
+  */
+  justify-content: flex-start flex-end center flex-start flex-end;
+
+  /*
+>>align-content:stretch<< is for control and management all element in content  position , hightand 
+and the new element arrange all this in (vertical) >>>to work u must make the (display:flex;)<<<<
+(stretch) the defult value  and it make the elements size all change together in case u dont give one of them size
+(flex-start) place the all elements in the start put (vertical)
+(flex-end)   place the all elements in the end put   (vertical)
+(center)     place the all elements in the center put(vertical)
+  (space-between) is to make the space between the element (vertical)
+  (space-around)  is to make the space right and left the element(vertical)
+  (space-evenly)  is to make the space right and left the element but all are equal (vertical)
+*/
+  align-content: stretch flex-start flex-end center space-between space-around space-evenly;
+
+
+  /*
+>>grid-template-areas:<< is to customize how many column element take 
+*/
+  grid-template-areas: "logo logo nav nav nav nav nav"
+    "cont cont cont cont cont side side"
+    "foot foot foot foot . foot foot";
+  /* if u want to make the column empty between two elemen just add (.)*/
+
+  /*
+  >>grid-area:<< to identfiy the element to (grid-template-areas:) by add it in element class || element name
+  >>grid-area:<< u can add [grid-row-start:] / [grid-column-start:] / [grid-row-end:] / [grid-column-end:]
+    */
+  grid-area: logo;
+
+  /*is to make the colmn take all page*/
+  height: 100vh;
+
+  /* 
+  >>grid-row:<< its to control how many row element take
+  >>grid-column:<<its to control how many column element take
+  */
+  grid-row: 1/3 span 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  grid-column: 1/3 span 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+
+/*------------------------------------------------(Transform)--------------------------------------------------*/
+.Transform {
+  /*
+  (2D/3D)
+  >>transform: scale ();<< its to stretch element in x-axis or y-axis or both  
+!!!!need too for prefixs!!!!
+  */
+  /*stretch element in x-axis*/
+  transform: scale x(1);
+  /*stretch element in y-axis*/
+  transform: scale y(1);
+  /*stretch element in x-axis and y-axis*/
+  transform: scale (1, 1);
+  /* to reverse element in x-axis or y-axis or both */
+  transform: scale (-1);
+
+  /* 
+  >>transform: rotate();<< its to make the element routat around its axis 
+  deg => dergrees
+  rad => radians
+  grad=> gradians
+  turn=> turn
+   */
+  transform: rotate(45deg 1rad 1grad 1turn);
+
+
+  /*
+  >>transform: translate(x,y,z);<< its for make element move in x-axis or y-axis or both using px % ...etc 
+  */
+  transform: translate3d(100px, -100px, 100px);
+
+  /*
+  >>transform: skew(x,y);<< it to make the element rotate horizonie
+  */
+  transform: skew(45deg 1rad 1grad 1turn);
+
+  /* 
+  >>transform: matrix(1.2, 0.2679, 0, 1.2, 20, 20)<< matrix( scaleX(1.2) skewY(15deg) skewX(0) scaleY(1.2) translateX(20) translateY(20))
+  */
+  transform: matrix(1.2, 0.2679, 0, 1.2, 20, 20);
+  transform: translateX(20) translateY(20) scaleX(1.2) skewY(15deg) skewX(0) scaleY(1.2);
+
+  /*
+>>  transform-origin: 50% 50% 0;<< its to changed the center axis or point  which u can routat or do any translat effict in
+default value=>50% 50% 0
+2D transform =>   transform-origin: x,y 
+3D transform =>   transform-origin: x,y,z
+ucan accses the following 
+in x-axis
+>> css unit[px, em, rem]
+>> %
+>> keyword =>[left=0%,center=50%,right=100%]
+
+in y-axis
+>> css unit[px, em, rem]
+>> %
+>> keyword =>[top=0%,center=50%,bottom=100%]
+*/
+  transform-origin: 50% 50% 0;
+
+  /*
+>>perspective:300px ;<< the space bettween u and the element too use z-axis 
+(useing it in parent element to control z-axis in child)
+*/
+  perspective: 300px;
+
+  /* 
+>>perspective-origin: ;<< look like transform-origin but to Determine where the element will disaper and start and the angeel u look to it 
+(useing it in parent element to control z-axis in child)
+u must use after it  (perspective:) to make it work
+*/
+  perspective-origin: top right;
+
+  /*
+  >>transform-style:preserve-3d;<< its too make the element save his efficts in 3d as a prepare the view to be 3D (put it in parent) 
+  (flat) is default value
+  (preserve-3d) its to prepare the vie to be 3D
+  */
+  transform-style: flat preserve-3d;
+
+  /*
+  >>backface-visibility: hidden ;<< to make the element  when he (routat 90deg or above )back element apper (put it in child)
+  (visible) is default value
+  (hidden) is to make elemet disapper when it be 90 or above
+  */
+  backface-visibility: hidden visible;
+
+}
+
+/*------------------------------------------------(Animation)--------------------------------------------------*/
+
+/*
+>>@keyframes<< (here u put a proper name) { its to make animation put effects whice  must happen and section it using (from{} ,to{})or(0% to 100%)
+  from{}
+  to{}
+}
+*/
+@keyframes change-color {
+  0% {
+    background-color: #27ea27;
+  }
+
+  50% {
+    background-color: #2980b9;
+  }
+
+  100% {
+    background-color: #27ea27;
+  }
+}
+
+.animetion {
+  width: 50px;
+  background-color: #27ea27;
+
+  /* 
+  >>animation-name: (u put here the name u choice in @keyframes);<< its to call the animetion u do in @keyframes
+  */
+  animation-name: change-color;
+
+  /*
+  >>  animation-duration: 3s;<< its to add the time that animation excution during
+  */
+  animation-duration: 3s;
+
+  /*
+>>  animation-iteration-count: number of time ;<< its to custom how many time will this animation happen
+*/
+  animation-iteration-count: infinite 2;
+
+  /*
+>>  animation-timing-function: ease linear; << this to custam the way the animation will happen ,is it will be auto without witing or laging or laging and slow down
+  (ease)make it slowdown when it retur to 0 point
+  (linner) make it dosent slowdown in 0 point just keep going
+*/
+  animation-timing-function: ease linear;
+
+
+  /*
+  >>animation-direction: ;<< its to spiceilazion the direction of aniamtion
+  (alternate) in both way
+  */
+  animation-direction: normal reverse alternate alternate-reverse;
+
+  /*
+  >>  animation-delay:2s ;<< the time it take to start animation
+  */
+  animation-delay: 2s;
+
+  /*
+  >>animation-fill-mode:;<< its to select which position it will stop at the position that end with or start with or both
+  */
+  animation-fill-mode: forwards both backwards;
+
+  /*
+>>  animation-play-state: running ;<< its too identfy the state of animation are it running(play) or paused(stoped)
+----->we use it with hover to make the animation stop when we pointer it with mouse
+*/
+  animation-play-state: running paused;
+
+  /*short cut of animation*/
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.animetion:hover {
+  animation-play-state: paused;
+}
+
+/*------------------------------------------------(Selectors)--------------------------------------------------*/
+
+/*
+CSS Selectors 
+>>(*)<< its to select every element in html
+>>(element)<<element like [p, div, h1]that target every element have same tages like the element tag
+>>(.class-name)<< that target the element witch have class with the name u choice
+>>(id-name)<< that target the element witch have id with the name u choice
+>>(.parent .child)<<  that target class inside class
+>>(.class.class)\no space between them\<< that target the element witch have two names in the two classes
+>>(.class-name div , .class-name p)<< that target groubing of element in different classes
+>>(p.class-name)\no space between them\<< that target element with two condition like be class-name and p in same time
+>>(.parent > .child)<< that target(direct child) the element which under the parent directed
+>>(element + other element)<<[div + p] that target the element next to the firest element(not the child of next of him)
+(element ~ other element)<<[div ~ p] that target all element next to the firest (not the child of next of him) 
+>>(attribute)<<[title] that target  any element which have attribut u seleced
+>>(element[attribute])<<(div[titel]) that target element which have attribut
+>>[attribute~="value"]<< that target element have attribute named have word (with space before it) =value
+>>[attribute*="value"]<< that target element have attribute named have string(with no space before it)=value
+>>[attribute^="value"]<< that target element have attribute named have string(start with it)=value
+>>(:first-child)<< (p:first-child)that target firest child for element
+>>(:last-child)<< (p:last-child)that target last child for element
+>>(:first-of-type)<< (p:first-of-type)that target first child of the type for element
+>>(:last-of-type)<< (p:last-of-type)that target last child of the type for element
+>>(:only-child)<< (p:only-child)that target only child for element
+>>(:not(slectors))<< (p:not(slectors)that target all element except element u selected
+>>(:nth-child(n))<< (p:nth-child(73))that target child number 73 (count from first to last)
+>>(:nth-last-child(n))<< (p:nth-last-child(73))that target child number 73 (count from last to lasfirst)
+>>(:nth-of-type(n))<< (p:nth-of-type(73))that target child number 73 (count from first to last and count only same type)
+>>(:nth-last-of-type(n))<< (p:nth-last-of-type(73))that target child number 73 (count from last to first  and count only same type)
+>>(:root)<< that target HTML TAG 
+>>(:checked)<< that target any element have attribbute checked ex(input[type="checkbox"]:checked + label{})
+>>(:empty)<< that target any element empty 
+>>(:disabled)<< that target any element have attribbute disabled 
+>>(:required)<< that target any element have attribbute required 
+>>(:focus)<< mean that when u target the element  it will be like typing the colorchang or do the action u insert
+>>(::selection)<< that make any element u selected in page take the theams u add
+>>(::placeholder)<< that make any element u placed holder for in page take the theams u add
+
+*/
+
+/*------------------------------------------------(Media Queries And Responsive Designs)--------------------------------------------------*/
+/*
+that to edit in print page(ctrl+p) add some thing or remove or edit
+*/
+@media print {}
+
+/* <!-- that to edit in print page(ctrl+p) add some thing or remove or edit but in other file to orginiztion ur project -->
+(html code)
+attriput media in html is for Customize the thems in link to -for ex- print page
+<link rel="stylesheet" href="Css/Print.css" media="print"> */
+/* <link rel="stylesheet" href="Css/Print.css" media="(min-width: 1000px) and (max-width:1400px)"> */
+
+
+/*Medium Screen */
+@media (max-width: 769px) {}
+
+
+/*Small Screen */
+@media (max-width: 480px) {}
+
+/*----------------------------------------(create your fram work)--------------------------------------------------*/
+/*
+first >>> do class in css and add every thing that u usualy repet it every time
+second>>> take name of class copy and put it in html div or element
+*/
+
+/* >>(firest) make the (  position: relative;)in the element */
+.under-line::before {
+  content: "";
+  background-color: #ff3d00;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.circle-100 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.circle-200 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.top-arrow::after {
+  content: "";
+  position: absolute;
+  border: 21px solid transparent;
+  border-bottom-color: var(--mainColor);
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.bottom-arrow::after {
+  content: "";
+  position: absolute;
+  border: 21px solid transparent;
+  border-top-color: var(--mainColor);
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.right-arrow::after {
+  content: "";
+  position: absolute;
+  border: 21px solid transparent;
+  border-left-color: var(--mainColor);
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+.left-arrow::after {
+  content: "";
+  position: absolute;
+  border: 21px solid transparent;
+  border-right-color: var(--mainColor);
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+}
+
+/*----------------------------------------(CSS Global Values)--------------------------------------------------*/
+/*
+--CSS Global Values
+---inherit  >>> that make element take thems of parent
+---initial  >>> that make element take defult value of element
+---unset    >>> work as inherit if element can be inherit || work as initial if element can't be inherit 
+---revert css level[4] >>> work as initial but make take user values
+---all      >>> make all thems in element unset or initial or inherit
+*/
+.all {
+  all: unset inherit initial;
+}
+
+/*----------------------------------------(important Nots BY Winter)--------------------------------------------------*/
+.notes {
+  color: #000;
+  /* div:first-of-type::after {
+  counter-set: Element 100;
+}>>counter-set<< its to make the counter start from spiceal numper
+
+
+(:not(name of class or elemen)) it make the element does not take the effects whice u add here  
+div:not(.grid):after { 
+  content: "Element " counter(Element);
+
+
+  ___________________how to make line under any element using befor and after_________________
+  >>(firest) make the (  position: relative;)in the element 
+  >>(secound) >>>.member_info div::before {
+  content: "";
+  background-color: #ff3d00;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+} */
+  /*
+(transparent) make the color disaper without color gradient
+*/
+  border-top-color: transparent;
+
+
+  /*
+  >>>>>>U CAN MAKE ELEMENT START ANIMATION AFTAR OTHER ONE BY MAKE THEM TAKE THE SAME DURTION TIME PUT SECTION THEM ONE FROM 0% TO 50% 
+  AND OTHER FROM  50% TO 100%
+  */
+}
+
+/*that to edite the label next chick box we mix many of selectors orders here */
+input[type="checkbox"]:checked+label {
+  color: #2980b9;
+}
+
+div.main.red {
+  color: var(--color);
+}
+
+.main.red:not(p) {
+  font-weight: bold;
+  color: red;
+}
+
+/*
+div:first-child  that for parent 
+:nth-last-child(2) that for child 
+*/
+div:first-child :nth-last-child(2) {
+  color: var(--color);
+}
+
+/* this to make the scroll to any section of ur web by any (a) smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* one of the famouse animetion movement make double move */
+@keyframes bouncing {
+
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40%,
+  60% {
+    transform: translateY(-20px);
+  }
+}
+
+/* make the element move small angel on of the famouse movement */
+.Transform:hover {
+  transform: rotate(5deg) scale(1.1);
+
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* to make the (a) scroling down to the section which u add like the following 
+first  >>>>in html code make sure that u add (#) and name of the section in !href! 
+
+<li><a href="#articles"> articles</a></li> 
+
+secound  >>>>make sure that section artical have id with the same href value
+*/
